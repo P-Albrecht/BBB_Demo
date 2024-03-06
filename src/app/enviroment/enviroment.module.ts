@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { EnviromentComponent } from './enviroment.component';
+import { NgModule } from '@angular/core';import { EnviromentComponent } from './enviroment.component';
 import { CommonModule } from '@angular/common';
+import {TreeViewModule} from '../tree-view/tree-view.module';
 
 @NgModule({
   declarations: [
@@ -8,13 +8,10 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
+    TreeViewModule,
   ],
-  exports: [
-    EnviromentComponent,
-  ],
+  exports: [EnviromentComponent],
   providers: [
-  ],
-  bootstrap: [
   ]
 })
 export class EnviromentModule { }
